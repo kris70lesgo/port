@@ -1,4 +1,4 @@
-import { Link } from 'next-view-transitions';
+import Link from 'next/link';
 import React from 'react';
 
 interface SkillProps {
@@ -12,10 +12,10 @@ export default function Skill({ name, href, children }: SkillProps) {
     <Link
       href={href ?? ''}
       target="_blank"
-      className="inline-flex items-center text-sm bg-black/5 dark:bg-white/15 border border-dashed dark:border-white/30 border-black/20 py-1 px-2 rounded-md skill-inner-shadow self-end text-black dark:text-white"
+      className="inline-flex items-center text-sm bg-white/10 hover:bg-white/15 border border-white/20 py-1.5 px-3 rounded-md self-end text-white transition-colors duration-200"
     >
       <div className="size-4 flex-shrink-0">{children}</div>
-      <p className="ml-1 text-sm font-bold">{name}</p>
+      <p className="ml-1.5 text-xs font-medium">{name}</p>
     </Link>
   );
 }
