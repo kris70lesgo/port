@@ -1,24 +1,10 @@
 'use client';
 
-import AWS from '@/components/technologies/AWS';
-import BootStrap from '@/components/technologies/BootStrap';
-import Bun from '@/components/technologies/Bun';
-import CSS from '@/components/technologies/CSS';
-import ExpressJs from '@/components/technologies/ExpressJs';
-import Figma from '@/components/technologies/Figma';
-import Html from '@/components/technologies/Html';
-import JavaScript from '@/components/technologies/JavaScript';
-import MongoDB from '@/components/technologies/MongoDB';
-import NestJs from '@/components/technologies/NestJs';
-import NextJs from '@/components/technologies/NextJs';
-import NodeJs from '@/components/technologies/NodeJs';
-import PostgreSQL from '@/components/technologies/PostgreSQL';
+import Vue from '@/components/technologies/Vue';
 import Postman from '@/components/technologies/Postman';
-import Prisma from '@/components/technologies/Prisma';
-import ReactIcon from '@/components/technologies/ReactIcon';
-import TailwindCss from '@/components/technologies/TailwindCss';
 import TypeScript from '@/components/technologies/TypeScript';
-import Vercel from '@/components/technologies/Vercel';
+import Docker from '@/components/technologies/Docker';
+
 
 export interface Technology {
   name: string;
@@ -51,18 +37,18 @@ export const experiences: Experience[] = [
     location: 'India (Remote)',
     image: '/shink.jpg',
     description: [
-      'Backend development for *Bhindi.io*, a flagship product of Upsurge Labs, focusing on core infrastructure and agent development.',
-      'Engineered and deployed multiple high-performance agents, enhancing product capabilities and user experience.',
-      'Testing agent functionality, authentication, automation, and system stability.',
-      'Streamlined development workflows by optimizing internal tools and maintaining detailed technical documentation.',
+      'Frontend development for LogChimp (open-source product of Code Carrot).',
+      'Implemented cursor-based pagination with infinite scroll to speed data loading and   prevent duplicate items.',
+      'Fixed an initial-render duplication bug by redesigning client-side state updates and scroll handling; added tests for loading/pagination.',
+      'Refactored frontend utilities to remove redundancy, improved developer experience with clearer docs and cleaner commit history.'
     ],
     startDate: 'July 2025',
     endDate: 'August 2025',
     technologies: [
       {
-        name: 'NestJS',
+        name: 'Vue',
         href: 'https://nestjs.com/',
-        icon: <NestJs />,
+        icon: <Vue />,
       },
       {
         name: 'Postman',
@@ -75,9 +61,9 @@ export const experiences: Experience[] = [
         icon: <TypeScript />,
       },
       {
-        name: 'Express',
+        name: 'Docker',
         href: 'https://expressjs.com/',
-        icon: <ExpressJs />,
+        icon: <Docker />,
       },
     ],
     website: 'https://codecarrots.in/',
