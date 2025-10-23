@@ -11,11 +11,14 @@ import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
 import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
-import Sanity from '@/components/technologies/Sanity';
+import Supabase from '@/components/technologies/Supabase';
 import Shadcn from '@/components/technologies/Shadcn';
 import SocketIo from '@/components/technologies/SocketIo';
 import TailwindCss from '@/components/technologies/TailwindCss';
-import ThreeJs from '@/components/technologies/ThreeJs';
+import Streamlit from '@/components/technologies/Streamlit';
+import HuggingFace from '@/components/technologies/HuggingFace';
+import Python from '@/components/technologies/Python';
+import Plotly from '@/components/technologies/Plotly';
 import TypeScript from '@/components/technologies/TypeScript';
 import Vercel from '@/components/technologies/Vercel';
 import { Project } from '@/types/project';
@@ -53,9 +56,10 @@ export const projects: Project[] = [
     link: 'https://as-help.vercel.app/',
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Bun', icon: <Bun key="bun" /> },
+      { name: 'Next.js', icon: <NextJs key="next.js" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Appwrite', icon: <Appwrite key="appwrite" /> },
+      { name: 'Supabase', icon: <Supabase key="supabase" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
     ],
     github: 'https://github.com/kris70lesgo/asHelp',
     live: 'https://as-help.vercel.app/',
@@ -71,13 +75,12 @@ export const projects: Project[] = [
     video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
     link: 'https://syncify.rocks',
     technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Next.js', icon: <NextJs key="next.js" /> },
       { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+      { name: 'Supabase', icon: <Supabase key="supabase" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      
     ],
     github: 'https://github.com/ramxcodes/syncify',
     live: 'https://syncify.rocks',
@@ -93,12 +96,10 @@ export const projects: Project[] = [
     video: 'https://ik.imagekit.io/hokb3mrdr/pasandida.mp4',
     link: 'https://quantumedge.streamlit.app/',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Prisma', icon: <Prisma key="prisma" /> },
-      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
+      { name: 'Python', icon: <Python key="python" /> },
+      { name: 'Streamlit', icon: <Streamlit key="streamlit" /> },
+      { name: 'Hugging Face', icon: <HuggingFace key="huggingface" /> },
+      { name: 'Plotly', icon: <Plotly key="plotly" /> },
     ],
     github: 'https://github.com/kris70lesgo/QuantumEdge',
     live: 'https://quantumedge.streamlit.app/',

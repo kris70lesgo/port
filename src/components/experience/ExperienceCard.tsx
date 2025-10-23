@@ -136,18 +136,16 @@ export function ExperienceCard({ experience }: ExperienceCardProps) {
       </div>
 
       {/* Description */}
-      <div className="flex flex-col text-[13px] leading-relaxed text-gray-500 font-mono">
-        {experience.description.map(
-          (description: string, descIndex: number) => (
-            <p
-              key={descIndex}
-              dangerouslySetInnerHTML={{
-                __html: `• ${parseDescription(description)}`,
-              }}
-            />
-          ),
-        )}
-      </div>
+      {/* Use a semantic list so wrapped lines align correctly under the first line */}
+      <ul className="list-disc list-outside pl-6 text-[13px] leading-relaxed text-gray-500 font-mono space-y-1 marker:text-gray-500/70">
+        {experience.description.map((description: string, descIndex: number) => (
+          <li
+            key={descIndex}
+            // Keep simple bold support with *text* -> <b>text</b>
+            dangerouslySetInnerHTML={{ __html: parseDescription(description) }}
+          />
+        ))}
+      </ul>
     </div>
   );
 }
