@@ -40,7 +40,7 @@ export default function Blogs() {
     <Container className="mt-0">
       <div className="mb-6">
         <p className="text-gray-500 text-sm">
-          Here are some <span className="text-white">blogs</span> I've written
+          Here are some <span className="text-white">blogs</span> I&apos;ve written
         </p>
       </div>
 

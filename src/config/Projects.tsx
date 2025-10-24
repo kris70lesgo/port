@@ -13,7 +13,7 @@ import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
 import Supabase from '@/components/technologies/Supabase';
 import Shadcn from '@/components/technologies/Shadcn';
-import SocketIo from '@/components/technologies/SocketIo';
+import Electron from '@/components/technologies/Electron';
 import TailwindCss from '@/components/technologies/TailwindCss';
 import Streamlit from '@/components/technologies/Streamlit';
 import HuggingFace from '@/components/technologies/HuggingFace';
@@ -27,22 +27,18 @@ export const projects: Project[] = [
   {
     title: 'Web Browser',
     description:
-      'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
-    image: '/project/notesbuddy.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
-    link: 'https://notesbuddy.in',
+      'Built a desktop browser using Electron and Python with BrowserView navigation.',
+    image: 'https://example.com/image.jpg',
+    video: '#',
+    link: '#',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Node.js', icon: <NodeJs key="Node.js" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
+      { name: 'Python', icon: <Python key="python" /> },
+      { name: 'Electron', icon: <Electron key="electron" /> },
     ],
-    github: 'https://github.com/ramxcodes/notesbuddy',
-    live: 'https://notesbuddy.in',
+    github: 'https://github.com/kris70lesgo/Browser',
+    live: '#',
     details: true,
     projectDetailsPageSlug: '/projects/notesbuddy',
     isWorking: true,
@@ -52,7 +48,7 @@ export const projects: Project[] = [
     description:
       'Model Context Protocol server for seamless Appwrite database operations with 7 powerful tools and 99.9% success rate',
     image: '/asshelp.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
+    video: '#',
     link: 'https://as-help.vercel.app/',
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -72,8 +68,8 @@ export const projects: Project[] = [
     description:
       'Real-time music streaming platform with synchronized playback, live chat, and social listening features',
     image: '/project/syncify.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
-    link: 'https://syncify.rocks',
+    video: '',
+    link: 'https://taste-one.vercel.app/',
     technologies: [
       { name: 'Next.js', icon: <NextJs key="next.js" /> },
       { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
@@ -82,10 +78,10 @@ export const projects: Project[] = [
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
       
     ],
-    github: 'https://github.com/ramxcodes/syncify',
-    live: 'https://syncify.rocks',
+    github: 'https://github.com/kris70lesgo/Cultura',
+    live: 'https://taste-one.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/syncify',
+    projectDetailsPageSlug: '#',
     isWorking: true,
   },
   {
@@ -93,7 +89,7 @@ export const projects: Project[] = [
     description:
       'Innovative dating platform featuring anonymous questions and authentic connections - currently in development',
     image: '/QuantumEdge.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/pasandida.mp4',
+    video: '#',
     link: 'https://quantumedge.streamlit.app/',
     technologies: [
       { name: 'Python', icon: <Python key="python" /> },
@@ -104,7 +100,7 @@ export const projects: Project[] = [
     github: 'https://github.com/kris70lesgo/QuantumEdge',
     live: 'https://quantumedge.streamlit.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/pasandida-aurat',
+    projectDetailsPageSlug: '#',
     isWorking: false, // Currently in development
   },
 ];

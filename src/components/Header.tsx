@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-black/80 backdrop-blur-sm z-50">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="w-full px-6 py-4 flex justify-between items-center">
         {/* Left - Time */}
         <div className="text-white/90 font-mono text-sm tracking-wider">
           {time}

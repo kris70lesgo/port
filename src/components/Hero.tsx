@@ -47,7 +47,7 @@ export default function Hero() {
         {/* Bio - Left aligned but within centered container */}
         <div className="space-y-3 text-white/70 font-mono text-[13px] leading-snug mb-8">
           <p>
-            I'm <span className="text-white font-medium">Agastya</span>, a 19yo developer living in India, exploring <span className="italic">AI and Machine Learning</span>.
+            I&apos;m <span className="text-white font-medium">Agastya</span>, a 19yo developer living in India, exploring <span className="italic">AI and Machine Learning</span>.
           </p>
           
           <p>
@@ -55,11 +55,11 @@ export default function Hero() {
           </p>
           
           <p>
-            When I'm <span className="text-white font-medium">not busy</span>, you'll usually find me watching movies, playing chess, hitting the gym, cycling, or just catching up on some much-needed sleep.
+            When I&apos;m <span className="text-white font-medium">not busy</span>, you&apos;ll usually find me watching movies, playing chess, hitting the gym, cycling, or just catching up on some much-needed sleep.
           </p>
           
           <p>
-            Let's <span className="text-white font-medium">be real</span> <span className="text-white font-medium">I get shit done</span>!
+            Let&apos;s <span className="text-white font-medium">be real</span> <span className="text-white font-medium">I get shit done</span>!
           </p>
         </div>
 
@@ -71,10 +71,15 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#1a1a1a] text-white/80 font-mono text-xs px-4 py-2 rounded-md border border-white/10 transition-all duration-300 hover:bg-white/5 hover:text-white"
           >
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full rounded-full bg-pink-500 opacity-75 animate-ping"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-500"></span>
+            <span className="relative inline-flex h-2.5 w-2.5 items-center justify-center">
+              {/* ripple – sits behind the dot, overflows only 1.8× the dot */}
+              <span className="absolute inset-0 rounded-full bg-pink-500 opacity-75
+                              animate-ping scale-[1.2]" />
+              {/* dot – sits on top, masks the ripple centre */}
+              <span className="rounded-full bg-pink-500 h-2.5 w-2.5" />
             </span>
+
+
             Available for new opportunities
             <svg
               xmlns="http://www.w3.org/2000/svg"
