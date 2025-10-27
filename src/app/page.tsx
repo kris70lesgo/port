@@ -20,75 +20,76 @@ export default function Home() {
     >
       <Navbar />
       
-      {/* Hero/About Section */}
-      <Reveal delay={0.1} duration={0.6} amount={0.3}>
-        <Hero />
-      </Reveal>
+      {/* Hero/About Section - NO Reveal wrapper to avoid conflicts with GSAP intro */}
+      <Hero />
 
-      {/* Section Border */}
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
-      </Reveal>
+      {/* Everything below will be hidden during intro animation */}
+      <div data-page-content>
+        {/* Section Border */}
+        <Reveal delay={0.1} duration={0.6} amount={0.3}>
+          <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
+        </Reveal>
 
-      {/* Experience Section */}
-      <Reveal delay={0.1} duration={0.6} amount={0.3}>
-        <Experience />
-      </Reveal>
+        {/* Experience Section */}
+        <Reveal delay={0.1} duration={0.6} amount={0.3}>
+          <Experience />
+        </Reveal>
 
-      {/* Section Border */}
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
-      </Reveal>
+        {/* Section Border */}
+        <Reveal delay={0.05} duration={0.4} amount={0.8}>
+          <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
+        </Reveal>
 
-      {/* Tech Stack Section */}
-      <Reveal delay={0.1} duration={0.6} amount={0.3}>
-        <div className="max-w-2xl mx-auto mt-12 mb-12">
-          <TechStackMarquee className="w-full" />
-        </div>
-      </Reveal>
+        {/* Tech Stack Section */}
+        <Reveal delay={0.1} duration={0.6} amount={0.3}>
+          <div className="max-w-2xl mx-auto mt-12 mb-12">
+            <TechStackMarquee className="w-full" />
+          </div>
+        </Reveal>
 
-      {/* Section Border */}
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
-      </Reveal>
+        {/* Section Border */}
+        <Reveal delay={0.05} duration={0.4} amount={0.8}>
+          <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
+        </Reveal>
 
-      {/* Projects Section */}
-      <Reveal delay={0.1} duration={0.6} amount={0.3}>
-        <Projects />
-      </Reveal>
+        {/* Projects Section */}
+        <Reveal delay={0.1} duration={0.6} amount={0.3}>
+          <Projects />
+        </Reveal>
 
-      {/* Section Border */}
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
-      </Reveal>
-    
-     {/* 
-      <Reveal delay={0.1} duration={0.6} amount={0.3}>
-        <Blogs />
-      </Reveal>
-
+        {/* Section Border */}
+        <Reveal delay={0.05} duration={0.4} amount={0.8}>
+          <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
+        </Reveal>
       
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
-      </Reveal>
-     */}
-    
-      {/* Call to Action Section */}
-      <Reveal delay={0.1} duration={0.6} amount={0.4}>
-        <CalltoAction />
-      </Reveal>
-      
-      {/* Final Section Border */}
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
-      </Reveal>
+       {/* 
+        <Reveal delay={0.1} duration={0.6} amount={0.3}>
+          <Blogs />
+        </Reveal>
 
-      {/* Small footer text */}
-      <Reveal delay={0.05} duration={0.4} amount={0.8}>
-        <div className="max-w-2xl mx-auto mt-2 mb-6 text-gray-400 text-xs text-left pb-1.5">
-          <span className="block">© 2025 Agastya Khati.</span>
-        </div>
-      </Reveal>
+        
+        <Reveal delay={0.05} duration={0.4} amount={0.8}>
+          <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
+        </Reveal>
+       */}
+      
+        {/* Call to Action Section */}
+        <Reveal delay={0.1} duration={0.6} amount={0.4}>
+          <CalltoAction />
+        </Reveal>
+        
+        {/* Final Section Border */}
+        <Reveal delay={0.05} duration={0.4} amount={0.8}>
+          <SectionBorder className="max-w-2xl mx-auto mt-8 mb-2" />
+        </Reveal>
+
+        {/* Small footer text */}
+        <Reveal delay={0.05} duration={0.4} amount={0.8}>
+          <div className="max-w-2xl mx-auto mt-2 mb-6 text-gray-400 text-xs text-left pb-1.5">
+            <span className="block">© 2025 Agastya Khati.</span>
+          </div>
+        </Reveal>
+      </div>
     </ClickSpark>
   );
 }

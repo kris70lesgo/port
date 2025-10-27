@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import localFont from 'next/font/local';
+import { useHeroIntro } from '@/hooks/use-hero-intro';
 
 // Load Doto Bold font from public folder
 const dotoBold = localFont({
@@ -11,11 +12,13 @@ const dotoBold = localFont({
 });
 
 export default function Hero() {
+  useHeroIntro();
+  
   return (
     <section className="flex items-center justify-center px-6 pt-24 pb-0">
       <div className="max-w-2xl w-full">
         {/* Profile Picture and Name Section - Left aligned */}
-        <div className="flex items-center gap-5 mb-8">
+        <div className="flex items-center gap-5 mb-8" data-intro-hero>
           {/* Profile Picture */}
           <div className="relative w-20 h-20 overflow-hidden rounded-full flex-shrink-0">
             <Image
@@ -45,7 +48,7 @@ export default function Hero() {
         </div>
 
         {/* Bio - Left aligned but within centered container */}
-        <div className="space-y-3 text-white/70 font-mono text-[13px] leading-snug mb-8">
+        <div className="space-y-3 text-white/70 font-mono text-[13px] leading-snug mb-8" data-intro-content>
           <p>
             I&apos;m <span className="text-white font-medium">Agastya</span>, a 19yo developer living in India, exploring <span className="italic">AI and Machine Learning</span>.
           </p>
@@ -64,7 +67,7 @@ export default function Hero() {
         </div>
 
         {/* Buttons */}
-        <div className="flex items-center gap-3 flex-wrap mb-8">
+        <div className="flex items-center gap-3 flex-wrap mb-8" data-intro-content>
           <a
             href="https://x.com/krish725_" // replace with your X handle
             target="_blank"
@@ -107,7 +110,7 @@ export default function Hero() {
         </div>
 
         {/* Social Links Section */}
-        <div className="pt-6 border-t border-white/5">
+        <div className="pt-6 border-t border-white/5" data-intro-content>
           <p className="text-white/40 font-mono text-xs mb-4">
             Where to find me <span className="text-white/30">(digitally)</span> if you wish to
           </p>

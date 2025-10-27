@@ -39,14 +39,9 @@ const techStack = [
   
   // Databases & Tools
   { name: "MongoDB", category: "database", icon: "/tech-icons/mongodb.svg", color: "bg-gray-500" },
-  { name: "PostgreSQL", category: "database", icon: "/tech-icons/postgresql.svg", color: "bg-gray-500" },
-  { name: "Redis", category: "database", icon: "/tech-icons/redis.svg", color: "bg-gray-500" },
-  
+  { name: "PostgreSQL", category: "database", icon: "/tech-icons/postgresql.svg", color: "bg-gray-500" },  
   // Developer Tools
   { name: "Git", category: "tool", icon: "/tech-icons/Git.svg", color: "bg-gray-500" },
-  { name: "Docker", category: "tool", icon: "/tech-icons/docker.svg", color: "bg-gray-500" },
-  { name: "AWS", category: "tool", icon: "/tech-icons/AWS.svg", color: "bg-gray-500" },
-  { name: "Google Cloud", category: "tool", icon: "/tech-icons/gcp.svg", color: "bg-gray-500" },
   { name: "Postman", category: "tool", icon: "/tech-icons/Postman.svg", color: "bg-gray-500" },
   { name: "Vercel", category: "tool", icon: "/tech-icons/Vercel.svg", color: "bg-white-500" },
   { name: "Linux", category: "tool", icon: "/tech-icons/Linux.svg", color: "bg-gray-500" },
