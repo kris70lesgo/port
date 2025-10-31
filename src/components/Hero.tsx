@@ -58,7 +58,7 @@ export default function Hero() {
           </p>
           
           <p>
-            When I&apos;m <span className="text-white font-medium">not busy</span>, you&apos;ll usually find me watching movies, playing chess, hitting the gym, cycling, or just catching up on some much-needed sleep.
+            When I&apos;m <span className="text-white font-medium">not busy</span>, you&apos;ll usually find me watching anime, getting obliterated in Dark Souls, learning about some niche topic at 3am.
           </p>
           
           <p>
