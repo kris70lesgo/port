@@ -22,6 +22,20 @@ export function useHeroIntro() {
     
     if (!heroElement || contentElements.length === 0) return;
 
+    // Force show hero first so we can measure its position
+    const style = document.createElement('style');
+    style.id = 'intro-override';
+    style.textContent = `
+      [data-intro-hero] { display: flex !important; opacity: 0; }
+      [data-intro-content] { display: block !important; opacity: 0; }
+      nav { display: block !important; opacity: 0; }
+      [data-page-content] { display: block !important; opacity: 0; }
+    `;
+    document.head.appendChild(style);
+
+    // Force layout recalculation
+    (heroElement as HTMLElement).offsetHeight;
+
     // Get the hero's natural position in the layout
     const heroRect = heroElement.getBoundingClientRect();
     
@@ -37,7 +51,7 @@ export function useHeroIntro() {
     const offsetX = viewportCenterX - heroCenterX;
     const offsetY = viewportCenterY - heroCenterY;
 
-    // Set initial states - hero starts at center
+    // Set initial states - hero starts at center, then opacity 0
     gsap.set(heroElement, {
       x: offsetX,
       y: offsetY,
@@ -52,14 +66,26 @@ export function useHeroIntro() {
 
     // Hide navbar and other sections initially
     if (navbar) {
-      gsap.set(navbar, { opacity: 0 });
+      gsap.set(navbar, { opacity: 0, display: 'block' });
     }
     if (pageContent) {
-      gsap.set(pageContent, { opacity: 0 });
+      gsap.set(pageContent, { opacity: 0, display: 'block' });
     }
 
     // Create timeline
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+      onComplete: () => {
+        // Ensure everything stays visible after animation
+        const finalStyle = document.createElement('style');
+        finalStyle.textContent = `
+          nav, [data-page-content], [data-intro-hero], [data-intro-content] {
+            opacity: 1 !important;
+            pointer-events: auto !important;
+          }
+        `;
+        document.head.appendChild(finalStyle);
+      }
+    });
 
     // Step 1: Fade in and scale up (while still centered)
     tl.to(heroElement, {
