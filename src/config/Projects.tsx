@@ -28,7 +28,7 @@ export const projects: Project[] = [
     title: 'Web Browser',
     description:
       'Built a desktop browser using Electron and Python with BrowserView navigation.',
-    image: 'https://example.com/image.jpg',
+    image: '/browsers.png',
     video: '#',
     link: '#',
     technologies: [
@@ -44,10 +44,10 @@ export const projects: Project[] = [
     isWorking: true,
   },
   {
-    title: 'A$$HElp',
+    title: 'Ashelp',
     description:
       'Model Context Protocol server for seamless Appwrite database operations with 7 powerful tools and 99.9% success rate',
-    image: '/asshelp.png',
+    image: '/as.png',
     video: '#',
     link: 'https://as-help.vercel.app/',
     technologies: [
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     title: 'Cultura',
     description:
       'Real-time music streaming platform with synchronized playback, live chat, and social listening features',
-    image: '/project/syncify.png',
+    image: '/culturas.png',
     video: '',
     link: 'https://taste-one.vercel.app/',
     technologies: [
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     title: 'Quantum Edge',
     description:
       'Innovative dating platform featuring anonymous questions and authentic connections - currently in development',
-    image: '/QuantumEdge.png',
+    image: '/quantshot.png',
     video: '#',
     link: 'https://quantumedge.streamlit.app/',
     technologies: [
