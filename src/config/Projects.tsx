@@ -27,10 +27,10 @@ export const projects: Project[] = [
   {
     title: 'Web Browser',
     description:
-      'Built a desktop browser using Electron and Python with BrowserView navigation.',
+      'Agentic AI browser for natural language webpage control',
     image: '/browsers.png',
-    video: '#',
-    link: '#',
+    video: '',
+    link: 'https://github.com/kris70lesgo/Browser',
     technologies: [
       { name: 'Node.js', icon: <NodeJs key="Node.js" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       { name: 'Electron', icon: <Electron key="electron" /> },
     ],
     github: 'https://github.com/kris70lesgo/Browser',
-    live: '#',
+    live: 'https://github.com/kris70lesgo/Browser',
     details: true,
     projectDetailsPageSlug: '/projects/notesbuddy',
     isWorking: true,
@@ -46,9 +46,9 @@ export const projects: Project[] = [
   {
     title: 'Ashelp',
     description:
-      'Model Context Protocol server for seamless Appwrite database operations with 7 powerful tools and 99.9% success rate',
+      'Marketplace connecting students to verified academic performers',
     image: '/as.png',
-    video: '#',
+    video: 'https://nlqqjmipfodb24gi.public.blob.vercel-storage.com/portfolio-optimized-2.mp4',
     link: 'https://as-help.vercel.app/',
     technologies: [
       { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
@@ -66,7 +66,7 @@ export const projects: Project[] = [
   {
     title: 'Cultura',
     description:
-      'Real-time music streaming platform with synchronized playback, live chat, and social listening features',
+      'AI-powered taste-based recommendation engine for culture and travel.',
     image: '/culturas.png',
     video: '',
     link: 'https://taste-one.vercel.app/',
@@ -87,9 +87,9 @@ export const projects: Project[] = [
   {
     title: 'Quantum Edge',
     description:
-      'Innovative dating platform featuring anonymous questions and authentic connections - currently in development',
+      'Quantitative trading platform using AI for analysis, risk management, and optimization',
     image: '/quantshot.png',
-    video: '#',
+    video: 'https://nlqqjmipfodb24gi.public.blob.vercel-storage.com/portfolio-optimized.mp4',
     link: 'https://quantumedge.streamlit.app/',
     technologies: [
       { name: 'Python', icon: <Python key="python" /> },

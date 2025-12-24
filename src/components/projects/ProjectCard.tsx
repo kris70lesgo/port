@@ -55,9 +55,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
                   <video
                     className="h-full w-full object-cover rounded-lg"
                     src={project.video}
-                    autoPlay
-                    loop
+                    preload="metadata"
+                    playsInline
                     controls
+                    autoPlay
                   />
                 </div>
                 <DialogTitle className="sr-only">{project.title}</DialogTitle>

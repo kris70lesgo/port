@@ -89,6 +89,13 @@ body {
   pointer-events: none;
 }
 
+/* Hide elements during intro animation */
+nav,
+[data-intro-content],
+[data-intro-hero] {
+  display: none !important;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
